@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
     public void clickHandler(View view) {
          String name = nameEditText.getText().toString();
         Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
+        TextView resTextView = findViewById(R.id.textViewRes);
+        resTextView.setText(name);
 
 
     }
